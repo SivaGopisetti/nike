@@ -31,7 +31,7 @@
  
  
  const sivaRouter=require('./routersss/help')    //importing and store the data
- app.use('/',sivaRouter);
+ app.use('/help',sivaRouter);
  
  
  

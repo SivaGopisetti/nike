@@ -26,7 +26,7 @@
      const help = new newschema({              //ftech the data accroding the schema
          email:req.body.email,
          password:req.body.password,
-         newpassword:req.body.newpassword,
+         newpassword:req.body.password_confirmation,
          firstname:req.body.firstname,
          lastname:req.body.lastname
      })
@@ -37,7 +37,7 @@
      res.json(a1)
          
      } catch (err) {
-         res.send('error')
+         res.send(err)
          
      }
  

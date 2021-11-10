@@ -41,7 +41,7 @@ function Signuppage() {
 
   //post data
   function userData() {
-    let emaildata = document.getElementById( "email_address" ).value;
+    let emaildata = document.getElementById( "email_id" ).value;
     let passworddata = document.getElementById( "password" ).value;
     let confirmpassworddata = document.getElementById(
       "password-confirmation"

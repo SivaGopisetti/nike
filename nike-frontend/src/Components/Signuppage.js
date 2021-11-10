@@ -2,7 +2,8 @@
  * importing necessary required npm modules
  * using react hooks for validation form
  * intializing schema to store data with respect to backend schema
- *
+ *import axios from axios module
+ *importing the yupResolver from @hookform/resolver/yup
  */
 
 import React from "react";
@@ -12,6 +13,8 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
+/*using yup to validate the form
+*/
 const newschema = yup.object().shape( {
   email: yup.string().email().required( "email should be valid" ),
   password: yup.string().required( "password should be valid" ).min( 4 ).max( 8 ),
@@ -58,7 +61,7 @@ function Signuppage() {
     else {
       str = null;
     }
-
+    //using the axios 
     axios
       .post( "http://localhost:1109/help", {
         email: emaildata,

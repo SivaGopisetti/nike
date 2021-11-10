@@ -1,16 +1,19 @@
+/*
+*importing the react
+*impporting the link from react-route-dom module
+*/
 import React from 'react';
 import {Link} from "react-router-dom";
 
+
+// create a function login page
 function Loginpage() {
    
     return (
         <div class="form_wrapper">
         <div class="form_container">
             <div class="title_container">
-            <img
-      src="https://s3.nikecdn.com/unite/app/908/images/swoosh_black_2x.png"
-      alt="logo" />
-
+            <img src="https://s3.nikecdn.com/unite/app/908/images/swoosh_black_2x.png"alt="logo" />
                 <h2> Login Here</h2>
             </div>
             <div class="row clearfix">
@@ -41,4 +44,5 @@ function Loginpage() {
     </div>
     );
 }
+//export the 
 export default Loginpage;

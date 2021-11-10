@@ -2,7 +2,7 @@
 */
 const mongoose = require('mongoose') 
 const newschema=new mongoose.Schema({
-    
+// all requred schema data
     email:{
         type :String,
         required:true
@@ -25,7 +25,5 @@ const newschema=new mongoose.Schema({
     }
    
 }) 
-
-
 
 module.exports= mongoose.model('newschema',newschema)

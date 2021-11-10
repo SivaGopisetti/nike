@@ -1,8 +1,17 @@
+/*
+importing the react from react
+importing react-router-dom  modules 
+*/
+
+
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Loginpage from './Components/Loginpage';
-import Signuppage from './Components/Signuppage';
-import './Components/Loginpage.css'
+import Loginpage from './Components/Loginpage';             //importing the loginpage component
+import Signuppage from './Components/Signuppage';           //importing the signuppage component
+import './Components/Loginpage.css'                         //importing the login.css component
+
+//creating the funtion for importing the all components
 function App() {
   return (
     <Router>
@@ -21,4 +30,5 @@ function App() {
   );
 }
 
+//exporting  the app 
 export default App;

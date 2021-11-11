@@ -17,13 +17,23 @@ import * as yup from "yup";
 */
 const newschema = yup.object().shape( {
   email: yup.string().email().required( "email should be valid" ),
-  password: yup.string().required( "password should be valid" ).min( 4 ).max( 8 ),
-  password_confirmation: yup
-    .string()
-    .required( "password confirmation should be valid" )
-    .oneOf( [yup.ref( "password" ), null] ),
-  firstname: yup.string().max( 15 ).required( "firstname is mandatory" ),
-  lastname: yup.string().max( 15 ).required( "lastname is mandatory" ),
+  password: yup.string()
+    .required("Please Enter your password")
+    .matches(
+      /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
+      "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character"
+    ),
+
+  password_confirmation: yup.string().test(
+    "passwords-match",
+    "Passwords must match",
+    function (value) {
+      return this.parent.password === value;
+    }
+  ),
+
+  firstname: yup.string().max(15).required("firstname is mandatory").matches(/^[a-zA-Z]*$/g, "firstname should be valid"),
+  lastname: yup.string().max(15).required("lastname is mandatory").matches(/^[a-zA-Z]*$/g, "firstname should be valid"),
   tnc: yup.bool().oneOf( [true], "Accept Ts & Cs is required" ),
 } );
 
@@ -52,15 +62,7 @@ function Signuppage() {
     let firstnamedata = document.getElementById( "firstname" ).value;
     let lastnamedata = document.getElementById( "lastname" ).value;
 
-    // eslint-disable-next-line
-    let str,
-      element = document.getElementById( 'cal_preview' );
-    if ( element != null ) {
-      str = element.value;
-    }
-    else {
-      str = null;
-    }
+ 
     //using the axios 
     axios
       .post( "http://localhost:1109/help", {

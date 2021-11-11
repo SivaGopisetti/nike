@@ -13,7 +13,7 @@ function Loginpage() {
         <div class="form_wrapper">
         <div class="form_container">
             <div class="title_container">
-            <img src="https://s3.nikecdn.com/unite/app/908/images/swoosh_black_2x.png" />
+            <img src="https://s3.nikecdn.com/unite/app/908/images/swoosh_black_2x.png"alt="logo" />
                 <h2> Login Here</h2>
             </div>
             <div class="row clearfix">

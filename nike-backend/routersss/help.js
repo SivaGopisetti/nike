@@ -1,7 +1,4 @@
-/**
- * importing express modules 
- * giving newschema to database and giving file directory to that.
- */
+
 
 
 

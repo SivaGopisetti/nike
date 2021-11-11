@@ -64,19 +64,7 @@
 	  const firstnamedata = document.getElementById("firstname").value;
 	  const lastnamedata = document.getElementById("lastname").value;
  
-	  // eslint-disable-next-line
-	  // let str,
-	  //   element = document.getElementById('cal_preview');
-	  // if (element != null) {
-	  //   str = element.value;
-	  // }
-	  // else {
-	  //   str = null;
-	  // }
-	  
-	  // giving post schema and port to store data 
- 
- 
+	//importing the axios from 
 	  axios
 		 .post("http://localhost:1109/help", {
 			email: email_given,

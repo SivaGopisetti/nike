@@ -1,8 +1,5 @@
-/**
- * 
-*/
 
-
+// importing the 
 import axios from "axios";
 
 //post data

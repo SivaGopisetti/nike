@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# project name:nike 
 
 This project is done with  [Create React App](https://github.com/SivaGopisetti/nike.git).
 

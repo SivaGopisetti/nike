@@ -1,7 +1,4 @@
 
-
-
-
  const express= require('express')              //importing the express modules
  const router =express.Router()                // using express with router it is used for routing purpose
  const newschema=require('../schema/newschema')

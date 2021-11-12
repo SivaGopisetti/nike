@@ -1,6 +1,12 @@
 
 import React from 'react'
 
+/**
+ * @description: Here pagenotfound component is responsible for if server address is invalid
+ * @returns jsx elements
+ */
+
+
 const PageNotFound = () => {
     return (
         <div id="wrapper">
@@ -12,4 +18,4 @@ const PageNotFound = () => {
     )
 }
 
-export default PageNotFound;
+export default PageNotFound;  // export default component

@@ -1,6 +1,7 @@
-/*
-importing the mongoose
-*/
+/**
+ * @description:importing the mongoose to store the data in database using schema
+
+ */
 const mongoose = require('mongoose') 
 const newschema=new mongoose.Schema({
 // all requred schema data
@@ -27,4 +28,4 @@ const newschema=new mongoose.Schema({
    
 }) 
 
-module.exports= mongoose.model('newschema',newschema)
+module.exports= mongoose.model('newschema',newschema)  // exporting the schema for production use

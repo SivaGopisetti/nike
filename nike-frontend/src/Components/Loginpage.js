@@ -1,6 +1,6 @@
 /*
 *importing the react
-*impporting the link from react-route-dom module
+*importing the link from react-route-dom module
 */
 import React from 'react';
 import { Link } from "react-router-dom";
@@ -9,12 +9,12 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-<<<<<<< HEAD
+
 /**
  * @description: Here the login page is responsble for the authenticating the user details with details given in the database
  * @returns JSX elements
  */
-=======
+
 
 
 const newschema = yup.object().shape( {
@@ -22,7 +22,12 @@ const newschema = yup.object().shape( {
   email: yup.string().email().required( "email should be valid" ),
   password: yup.string().required( "password should be valid" ).matches( /^(?=.[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,}$,/ )
 } )
->>>>>>> 2dd1e07b80cd88e1523299243e535ccfb1e8ee3a
+
+/**
+ * @description: Here the login page component  will be schema according to the registered user details in database 
+ * @returns JSX elements
+ */
+
 
 function Loginpage() {
   const {
@@ -39,6 +44,13 @@ function Loginpage() {
     console.log( data );
     reset();
   };
+
+  /**
+   * @description: Here the data is stored by validating the page by id.
+   */
+
+
+
 
   function datagiven() {
     let emaildata = document.getElementById( "email_id" ).value;
@@ -97,4 +109,4 @@ function Loginpage() {
   );
 }
 
-export default Loginpage;
+export default Loginpage;   //exporting default Loginpage for production use

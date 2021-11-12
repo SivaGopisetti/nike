@@ -1,4 +1,7 @@
-
+/**
+ * @description: Here importing express modules for server handling
+ * The primary use of Express is to provide server-side logic for web and mobile applications, and as such it's used all over the place
+ */
  const express= require('express')              //importing the express modules
  const router =express.Router()                // using express with router it is used for routing purpose
  const newschema=require('../schema/newschema')
@@ -64,4 +67,5 @@
      }
  })
  
- module.exports= router           //exporting required modules
+ module.exports= router           //exporting required modules for production use
+ 

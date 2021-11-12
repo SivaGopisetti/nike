@@ -1,5 +1,5 @@
 
-// importing the 
+// importing the  axios modules
 import axios from "axios";
 
 //post data
@@ -28,4 +28,4 @@ function axiosapi() {
       console.log(error);
     });
 }
-export default axiosapi;
+export default axiosapi; // exporting default modules to use in app.js

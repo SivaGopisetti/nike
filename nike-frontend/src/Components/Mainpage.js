@@ -1,7 +1,16 @@
+/**
+ * importing required necessary modules 
+ */
+
+
+
 import React, { Component } from 'react';
 import  './Mainpagee.css';
 
-
+/**
+ * @description:Here mainpage contains all the html elements for the page to load the products.
+ * @returns JSX elements
+ */
 
 class Mainpage extends Component {
 	render() {
@@ -504,7 +513,6 @@ class Mainpage extends Component {
 				
 				</div>
 			</section>
-			{/* custom js file link  */}
 		</>
 
 
@@ -515,4 +523,4 @@ class Mainpage extends Component {
 	}
 }
 
-export default Mainpage;
+export default Mainpage;   // export default components and using in app.js

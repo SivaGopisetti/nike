@@ -1,13 +1,28 @@
 /**
+<<<<<<< HEAD:nike-frontend/src/Components/Landingpage.js
  * importig the react component from react
  * 
  */
+=======
+ * importing required necessary npm modules
+ * importing link inbuilt modules for routing of pages
+ * 
+ */
+
+
+>>>>>>> cb58d99dde6a1a927e8822d144359408f41db179:nike-frontend/src/Components/dashboard.js
 import React, { Component } from 'react';
 import './Landingpagee.css';
 import { Link } from "react-router-dom";
 
+/**
+ * @description: Landing is responsible for the main interface of the website for sign in and registration
+ * @returns JSX elements
+ */
 
-class Dashboard extends Component {
+
+
+class Landingpage extends Component {
     render() {
         return (
             <>
@@ -51,4 +66,4 @@ class Dashboard extends Component {
     }
 }
 
-export default Dashboard;
+export default Landingpage;  // exporting default landingpage to use in production

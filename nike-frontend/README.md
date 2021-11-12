@@ -1,4 +1,4 @@
-# project name:nike 
+# project name:Nike - Two Page Signup Form with connection to database using axios,ajax with validation form
 
 This project is done with  [Create React App](https://github.com/SivaGopisetti/nike.git).
 
@@ -14,57 +14,43 @@ Open [http://localhost:1108](http://localhost:1108) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+# project name
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Nike Ecommerce login page with two page signup form with valiadation in frontend and backend storing in database with given schema by comparing the data for the both frontend and backend...
 
-### `npm run build`
+This application is used for registering new user and if your already an existing user you can login into to website by user data by authenticating that Mainpage will be loaded with products.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Project Status
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Now, This project is currently in development. New users can sucessfully registered by giving personal data after successful registration they login into the website by their login credentials 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Installation and Setup Instructions
+Clone down this repository. You will need node and npm installed globally on your machine.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Installation:
+npm install this will install node_module 
+note that install node_modules both in nike-frontend and nike-backend.
+nodemon module is installed as dev dependencies here
+you can install package.json using command npm init --y
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To Run Test Suite:
+npm test .
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To Start Server:
+npm start . and this application runs on http://localhost:1108/
+ 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# folder structure
+ contains two folder i.e nike-frontend(front end part) and nike-backend(backend part).
+ In nike-frontend(folder):
+ src contains Components,helpers,images.
+ Components folder contain all the JSX Components which can be reusable.
+ Helper folder contains all the helper files which is used for from validation and to post data to backend.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ In nike-backend folder:
+ schema folder contain schema part.
+ routers folder contains all requests .
+ index file contain connection to mongodb.

@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { connections } from "../helpers/connections";
-import axiosapi from "../helpers/axiosapi";
+import axiosapi from "../helpers/Axiosapi";
 
 /**
  * @description: this function will be using required variables to load data after submit and reloading the form to initial page
@@ -42,10 +42,7 @@ function Signuppage() {
     <div className="form_wrapper">
       <div className="form_container">
         <div className="title_container">
-          <img
-            src="https://s3.nikecdn.com/unite/app/908/images/swoosh_black_2x.png"
-            alt="logo"
-          />
+          <img src="https://s3.nikecdn.com/unite/app/908/images/swoosh_black_2x.png" alt="logo" className="logo"/>
           <h2> YOUR ACCOUNT FOR EVERYTHING NIKE</h2>
         </div>
         <div class="row clearfix">

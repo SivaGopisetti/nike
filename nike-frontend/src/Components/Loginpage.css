@@ -128,6 +128,9 @@ body {
  .form_wrapper input[type="submit"]:focus {
 	 background: #e7945c;
 }
+/* .logo{
+	
+} */
  
  .form_wrapper input[type="checkbox"], .form_wrapper input[type="radio"] {
 	 border: 0;

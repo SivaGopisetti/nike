@@ -1,5 +1,5 @@
 /*
-importing the mongoose
+importing the mongoose to storing the data 
 */
 const mongoose = require('mongoose') 
 const newschema=new mongoose.Schema({
@@ -27,4 +27,5 @@ const newschema=new mongoose.Schema({
    
 }) 
 
+//exporting the mongoose module
 module.exports= mongoose.model('newschema',newschema)

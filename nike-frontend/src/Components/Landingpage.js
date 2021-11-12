@@ -1,5 +1,9 @@
+/**
+ * importig the react component from react
+ * 
+ */
 import React, { Component } from 'react';
-import './dashboard.css';
+import './Landingpagee.css';
 import { Link } from "react-router-dom";
 
 
@@ -38,15 +42,10 @@ class Dashboard extends Component {
                 {" "}
                 <input class="btn btn-primary" type="submit" value="SignUp" />
               </Link>
-
       </div>
     </div>
-   
   </div>
-</section>
-
-
-                
+</section>  
             </>
         );
     }

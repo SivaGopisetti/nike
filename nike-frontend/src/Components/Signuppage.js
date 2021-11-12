@@ -218,11 +218,12 @@ function Signuppage() {
                 className="button"
                 type="submit"
                 value="Join Us"
+				
                 onClick={axiosapi}
               />
-              <Link to="/">
+              <Link to="/Mainpage">
                 {" "}
-                <input className="button" type="submit" value="Sign In" />
+                <input className="button" type="submit" value="Next" />
               </Link>
             </form>
           </div>

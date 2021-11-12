@@ -8,7 +8,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 /**
- * @description: Here the login page is responsble for the authenticating the user details with details given in th 
+ * @description: Here the login page is responsble for the authenticating the user details with details given in the database
  * @returns JSX elements
  */
 

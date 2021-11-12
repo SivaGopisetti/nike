@@ -23,9 +23,9 @@ class Landingpage extends Component {
             {/* // <!-- Start Header --> */}
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="/" class="logo">Nike</a>
+    <img src="https://s3.nikecdn.com/unite/app/908/images/swoosh_black_2x.png" alt="logo"/>
+                {/* <a href="/" class="logo" >Nike</a> */}
     <div class="nav-links">
-      <a href="/a" class="fill">Home</a>
  
       <div class="toggle-menu scale-effect">
         <i class="fas fa-times"></i>

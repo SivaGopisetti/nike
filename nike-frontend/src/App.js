@@ -12,7 +12,7 @@ import Signuppage from './Components/Signuppage';           //importing the sign
 import './Components/Loginpage.css'                         //importing the login.css component
 import Mainpage from './Components/Mainpage';               //importing the mainpage 
 import PageNotFound from './Components/pageNotFound';
-import Dashboard from './Components/dashboard';
+import Landingpage from './Components/Landingpage'; //importingdashboard';
 
 /**
  * @description:creating the funtion for importing the all components
@@ -26,7 +26,7 @@ function App() {
     <Switch>
     <Route
         exact path="/"
-        render={() => <Dashboard/>}
+        render={() => <Landingpage/>}
       />
       <Route
         exact path="/Loginpage"

@@ -2,10 +2,6 @@
  * importting necessaary npm modules
  * 
 */
-
-
-
-
 import * as yup from "yup";
 
 export const connections = yup.object().shape({

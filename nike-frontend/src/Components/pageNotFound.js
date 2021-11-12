@@ -1,5 +1,4 @@
-
-import React from 'react'
+import React from "react";
 
 /**
  * @description: Here pagenotfound component is responsible for if server address is invalid
@@ -8,14 +7,18 @@ import React from 'react'
 
 
 const PageNotFound = () => {
-    return (
-        <div id="wrapper">
-            <img src="https://i.imgur.com/qIufhof.png"/>
-            <div id="info">
-                <h3>This page could not be found</h3>
-            </div>
-        </div >
-    )
-}
+  return (
+    <div id="wrapper">
+      <img src="https://i.imgur.com/qIufhof.png" />
+      <div id="info">
+        <h3>This page could not be found</h3>
+      </div>
+    </div>
+  );
+};
 
+<<<<<<< HEAD
+export default PageNotFound;
+=======
 export default PageNotFound;  // export default component
+>>>>>>> cb58d99dde6a1a927e8822d144359408f41db179

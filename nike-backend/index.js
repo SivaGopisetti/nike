@@ -30,7 +30,7 @@
  app.use(express.json())                        //using express in json
  
  
- const sivaRouter=require('./routersss/help')    //importing and store the data
+ const sivaRouter=require('./Routers/help')    //importing and store the data
  app.use('/help',sivaRouter);
  
  

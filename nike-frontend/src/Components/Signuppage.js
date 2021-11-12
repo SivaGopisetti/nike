@@ -1,23 +1,22 @@
 /**
- * importing necessary required npm modules
- * using react hooks for validation form
- * intializing schema to store data with respect to backend schema
+ * Importing necessary required npm modules
+ * Using react hooks for validating  form
+ * Intializing schema to store data with respect to backend schema
+ * @author: Sai Karthik
+ * @author: Siva Kumar
  *
  */
 
-
 import React from "react";
 import { Link } from "react-router-dom";
-
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-
 import { connections } from "../helpers/connections";
 import axiosapi from "../helpers/axiosapi";
 
-/*using yup to validate the form
-*/
-
+/**
+ * @description: this function will be using required variables to load data after submit and reloading the form to initial page
+ */
 
 function Signuppage() {
   const {
@@ -25,16 +24,19 @@ function Signuppage() {
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm( {
-    resolver: yupResolver( connections ),
-  } );
+  } = useForm({
+    resolver: yupResolver(connections),
+  });
 
-  const submitdata = ( data ) => {
-    console.log( data );
+  /**
+   * @description: Here it will be getting all the data given by user after filling the form according to the schema given
+   * @param {String} data
+   * @returns JSX
+   */
+  const submitdata = (data) => {
+    console.log(data);
     reset();
   };
-
-  
 
   return (
     <div className="form_wrapper">
@@ -48,7 +50,7 @@ function Signuppage() {
         </div>
         <div class="row clearfix">
           <div className="">
-            <form onSubmit={handleSubmit( submitdata )}>
+            <form onSubmit={handleSubmit(submitdata)}>
               <div className="input_field">
                 {" "}
                 <span>
@@ -64,7 +66,7 @@ function Signuppage() {
                   className="input-text"
                   data-validate="{required:true, 'validate-email':true}"
                   aria-required="true"
-                  {...register( "email" )}
+                  {...register("email")}
                 />
                 <p className="errormessage"> {errors.email?.message} </p>
               </div>
@@ -85,7 +87,7 @@ function Signuppage() {
                   data-validate="{required:true, 'validate-customer-password':true}"
                   autoComplete="off"
                   aria-required="true"
-                  {...register( "password" )}
+                  {...register("password")}
                 />
                 <p className="errormessage"> {errors.password?.message} </p>
               </div>
@@ -104,7 +106,7 @@ function Signuppage() {
                   data-validate="{required:true, equalTo:'#password'}"
                   autoComplete="off"
                   aria-required="true"
-                  {...register( "password_confirmation" )}
+                  {...register("password_confirmation")}
                 />
                 <p className="errormessage" style={{ fontSize: "12px" }}>
                   {" "}
@@ -127,7 +129,7 @@ function Signuppage() {
                       className="htmlFor-control  validate-alpha input-text "
                       autoComplete="off"
                       aria-required="true"
-                      {...register( "firstname" )}
+                      {...register("firstname")}
                     />
                     <p className="errormessage" style={{ fontSize: "12px" }}>
                       {" "}
@@ -150,7 +152,7 @@ function Signuppage() {
                       className="htmlFor-control validate-alpha  input-text "
                       autoComplete="off"
                       aria-required="true"
-                      {...register( "lastname" )}
+                      {...register("lastname")}
                     />
                     <p className="errormessage" style={{ fontSize: "12px" }}>
                       {" "}
@@ -203,7 +205,7 @@ function Signuppage() {
                   id="cb1"
                   name="tnc"
                   value=""
-                  {...register( "tnc" )}
+                  {...register("tnc")}
                   required
                 />
                 <label for="cb1">I agree with terms and conditions</label>
@@ -230,4 +232,4 @@ function Signuppage() {
   );
 }
 
-export default Signuppage;
+export default Signuppage; // exporting the components so that they can be used in app.js

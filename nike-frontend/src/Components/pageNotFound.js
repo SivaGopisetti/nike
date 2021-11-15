@@ -17,8 +17,5 @@ const PageNotFound = () => {
   );
 };
 
-<<<<<<< HEAD
+
 export default PageNotFound;
-=======
-export default PageNotFound;  // export default component
->>>>>>> cb58d99dde6a1a927e8822d144359408f41db179

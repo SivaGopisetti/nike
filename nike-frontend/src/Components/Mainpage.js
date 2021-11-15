@@ -5,28 +5,14 @@
 
 
 import React, { Component } from 'react';
-import  './Mainpagee.css';
-
 /**
  * @description:Here mainpage contains all the html elements for the page to load the products.
  * @returns JSX elements
  */
-
 class Mainpage extends Component {
 	render() {
 		return (
 			 <>
-			<meta charSet="UTF-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			<title>complete responsive ecommerce website design tutorial</title>
-			{/* font awesome cdn link  */}
-			<link
-				rel="stylesheet"
-				href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-			/>
-			{/* custom css file link  */}
-			<link rel="stylesheet" href="css/style.css" />
-			{/* header section starts  */}
 			<header>
 				<div id="menu-bar" className="fas fa-bars" />
 				<a href="/" className="logo">

@@ -1,25 +1,20 @@
 /*
-<<<<<<< HEAD
  *importing the react
  *impporting the link from react-route-dom module
  * importin the axios from axios for fetching the data to backend
  *importing the useForm from react-hook-form
  *import the yup module from from yup
- */
-import React from "react";
-=======
 *importing the react
 *importing the link from react-route-dom module
 */
 import React from 'react';
->>>>>>> cb58d99dde6a1a927e8822d144359408f41db179
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-<<<<<<< HEAD
+
 const newschema = yup.object().shape({
   showEmail: yup.boolean(),
   email: yup.string().email().required(" valid email shoud be enter"),
@@ -28,30 +23,12 @@ const newschema = yup.object().shape({
     .required("valid password should be entered")
     .matches(/^(?=.[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,}$,/),
 });
-=======
 
->>>>>>> cb58d99dde6a1a927e8822d144359408f41db179
 /**
  * @description: Here the login page is responsble for the authenticating the user details with details given in the database
  * @returns JSX elements
  */
-<<<<<<< HEAD
-=======
 
-
-
-const newschema = yup.object().shape( {
-  showEmail: yup.boolean(),
-  email: yup.string().email().required( "email should be valid" ),
-  password: yup.string().required( "password should be valid" ).matches( /^(?=.[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,}$,/ )
-} )
-
-/**
- * @description: Here the login page component  will be schema according to the registered user details in database 
- * @returns JSX elements
- */
-
->>>>>>> cb58d99dde6a1a927e8822d144359408f41db179
 
 function Loginpage() {
   const {

@@ -11,18 +11,14 @@ import Loginpage from './Components/Loginpage';             //importing the logi
 import Signuppage from './Components/Signuppage';           //importing the signuppage component
 import './Components/Loginpage.css'                         //importing the login.css component
 import Mainpage from './Components/Mainpage';               //importing the mainpage 
-<<<<<<< HEAD
 import PageNotFound from './Components/PageNotFound';
 import Dashboard from './Components/Landingpage';
-=======
-import PageNotFound from './Components/pageNotFound';
-import Landingpage from './Components/Landingpage'; //importingdashboard';
 
 /**
  * @description:creating the funtion for importing the all components
  * @returns JSX elements
  */
->>>>>>> cb58d99dde6a1a927e8822d144359408f41db179
+
 
 
 function App() {
@@ -31,7 +27,7 @@ function App() {
     <Switch>
     <Route
         exact path="/"
-        render={() => <Landingpage/>}
+        render={() => <Dashboard/>}
       />
       <Route
         exact path="/Loginpage"
@@ -41,20 +37,13 @@ function App() {
         exact path="/Signup"
         render={() => <Signuppage />}
       />
-<<<<<<< HEAD
-=======
-
->>>>>>> cb58d99dde6a1a927e8822d144359408f41db179
-        <Route
+      <Route
           exact path="/Mainpage"
           render={() => <Mainpage />}
-        />
-<<<<<<< HEAD
-      <Route Mainpage={PageNotFound} />
-=======
+      />
 
-      <Route Signuppage={PageNotFound} />
->>>>>>> cb58d99dde6a1a927e8822d144359408f41db179
+      <Route Mainpage={PageNotFound} />
+
     </Switch>
   </Router>
   );

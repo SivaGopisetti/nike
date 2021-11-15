@@ -1,16 +1,12 @@
 /**
-<<<<<<< HEAD:nike-frontend/src/Components/Landingpage.js
  * importig the react component from react
  * 
  */
-=======
+/** 
  * importing required necessary npm modules
  * importing link inbuilt modules for routing of pages
  * 
  */
-
-
->>>>>>> cb58d99dde6a1a927e8822d144359408f41db179:nike-frontend/src/Components/dashboard.js
 import React, { Component } from 'react';
 import './Landingpagee.css';
 import { Link } from "react-router-dom";
